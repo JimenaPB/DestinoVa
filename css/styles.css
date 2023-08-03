@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+}
+img {
+    width: 100%;
+    height: 300px;
+}
+.barnav{
+    background-color: #0A154F;
+    color: white;
+    font-weight: bolder;
+}
+.barnav :hover {
+   color: orangered;
+}
+.paisajes{
+    display: flex;
+    width: auto;
+}
+.carousel-item img {
+    object-fit: cover; 
+    height: 300px;
+    width: 100%;
+  }
+#logo{
+    width: 150px;
+    height: 100px;
+}
+.foot{
+    display: flex;
+    background-color: #e93f01;
+    color: #0A154F;
+    padding: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+    align-items: center; /* Alineación vertical */
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 300%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a164f77;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .carousel-caption h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .carousel-caption p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .add-to-cart,
+  .add-to-favorites {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .add-to-favorites {
+    background-color: #f0f0f0;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0a164f77;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5500;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  @media (max-width: 480px) {
+    .carousel-container {
+      flex-direction: column;
+    }
+    
+    .carousel {
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto;
+    }
+    
+    .carousel-inner {
+      width: 100%;
+    }
+  }
+  h1{
+    text-align: center;
+    font-family: 'Oleo Script', sans-serif;
+  }
+  
+  #logo {
+    width: 150px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    font-family: 'Oleo Script', sans-serif;  
+    text-align: center;
+}
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  @media (max-width: 480px) {
+    #logo {
+      width: 60px;
+      height: 60px;
+    }
+  
+    h2 {
+      font-size: 12px;
+    }
+  
+    .social-media img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .contact{
+    width: 20px;
+      height: 20px;
+  }
+
+
+
+
+  
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.copy{
+  text-align: center;
+  font-size: 15px;
+  background-color: #0A154F;
+  color: #fff;
+}
+
+
+
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #E96A36;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.maianaccord {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 20px;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  background-color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.accordion-button {
+  background-color: #0A154F;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bolder;
+  text-align: left;
+}
+.accordion-body {
+  padding: 10px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #0A154F;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el modal del carrito */
+.cart-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.cart-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.close-cart {
+  display: inline-block;  /* Cambiado a inline-block */
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+
+
+/* Ajustes para el ícono del menú hamburguesa */
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
+
+/* Cambiar el color del ícono al interactuar */
+.navbar-toggler-icon:hover {
+  background-color: orangered;
+}
+
+/* Cambios al hacer clic en el ícono */
+.navbar-toggler-icon.open {
+  transform: rotate(90deg);
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #0A154F;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #0A154F;
+}
+
+form {
+  width: 60%;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #0A154F;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #0A154F;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #0A154F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF4500;
+}
+
+#mensaje-enviado {
+  text-align: center;
+  margin-top: 20px;
+  color: #FF4500;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: #0A154F;
+}
+
+.contact-info h2 {
+  color: #0A154F;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #FF4500;
+}
+.swal2-container {
+  z-index: 9999; /* Asegura que el Sweet Alert esté por encima del contenido */
+}

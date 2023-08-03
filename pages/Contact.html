@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/oleo-script" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/oleo-script');</style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <!-- Agrega el enlace a Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="/images/1.png" alt="Logo"></a>
+    <nav class="navbar navbar-expand-lg barnav">
+      <div class="container-fluid">
+        <button class="navbar-toggler barnav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon barnav"></span>
+        </button>
+        <div class="collapse navbar-collapse barnav" id="navbarNavDropdown">
+          <ul class="navbar-nav barnav">
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" href="FQ.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item dropdown barnav">
+              <a class="nav-link dropdown-toggle barnav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Countries
+              </a>
+              <ul class="dropdown-menu barnav">
+                <li><a class="dropdown-item barnav" href="#">Action</a></li>
+                <li><a class="dropdown-item barnav" href="#">Another action</a></li>
+                <li><a class="dropdown-item barnav" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Botón del carrito -->
+<div class="cart-icon">
+  <i class="material-icons">shopping_cart</i>
+  <i class="fas fa-shopping-cart"></i>
+  <span class="cart-count">0</span>
+</div>
+
+<!-- Modal del carrito -->
+<div class="cart-modal" style="display: none;">
+  <div class="cart-content"></div>
+  <button class="close-cart close-cart-modal">Cerrar</button>
+</div>
+    </nav>
+  </header>
+  <body>
+    <h1>Contacto</h1>
+    <form id="contact-form" action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+  
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+  
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje-enviado"></div>
+</body>
+<footer class="foot">
+  <div class="column"> 
+    <img src="../images/ViaJando.png" id="logo" alt="logo">
+  </div>
+ 
+  <div class="column">
+    <img src="../images/ubicacion.png" alt="ubicacion" class="contact">
+    <h2>Buenos Aires, Argentina.</h2>
+    <img src="../images/whatsapp.png" alt="whatsapp" class="contact">
+    <h2>112233445566</h2>
+    <img src="../images/llama.png" alt="llama" class="contact">
+    <h2>0800- Destinova</h2>
+  </div>
+  <div class="social-media column">
+    <a href="https://es-la.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../images/gorjeo.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+  </div>
+ 
+</footer>
+<div class="copy"><h4 class="copy">Jimena Paola Barrios ©2023. Todos los derechos reservados.</h4></div>
+
+<script src="../script.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

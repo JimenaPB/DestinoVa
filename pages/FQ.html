@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/oleo-script" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/oleo-script');</style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <!-- Agrega el enlace a Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="/images/1.png" alt="Logo"></a>
+    <nav class="navbar navbar-expand-lg barnav">
+      <div class="container-fluid">
+        <button class="navbar-toggler barnav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon barnav"></span>
+        </button>
+        <div class="collapse navbar-collapse barnav" id="navbarNavDropdown">
+          <ul class="navbar-nav barnav">
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item barnav">
+              <a class="nav-link barnav" href=FQ.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item dropdown barnav">
+              <a class="nav-link dropdown-toggle barnav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Countries
+              </a>
+              <ul class="dropdown-menu barnav">
+                <li><a class="dropdown-item barnav" href="#">Action</a></li>
+                <li><a class="dropdown-item barnav" href="#">Another action</a></li>
+                <li><a class="dropdown-item barnav" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Botón del carrito -->
+<div class="cart-icon">
+  <i class="material-icons">shopping_cart</i>
+  <i class="fas fa-shopping-cart"></i>
+  <span class="cart-count">0</span>
+</div>
+
+<!-- Modal del carrito -->
+<div class="cart-modal" style="display: none;">
+  <div class="cart-content"></div>
+  <button class="close-cart close-cart-modal">Cerrar</button>
+</div>
+    </nav>
+  </header>
+    <main class="maianaccord">
+<h1>Preguntas Frecuentes</h1>
+    <div class="accordion" id="accordionExample">
+
+      <!-- Pregunta 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Cuál es el alcance geográfico de sus tours?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestros tours abarcan destinos nacionales e internacionales, brindando opciones para explorar diferentes continentes y culturas.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Cómo puedo reservar un tour?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Puedes reservar un tour en línea a través de nuestro sitio web o ponerte en contacto con nuestro equipo de atención al cliente para obtener ayuda personalizada.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Cuál es su política de cancelación?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestra política de cancelación varía según el tipo de tour y la antelación con la que se realice la cancelación. Puedes encontrar detalles específicos en nuestra sección de términos y condiciones.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Los tours incluyen transporte y alojamiento?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, nuestros tours incluyen transporte y alojamiento de alta calidad para garantizar una experiencia cómoda y segura.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿Los tours son adecuados para todas las edades?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Tenemos tours diseñados para todas las edades, desde aventuras familiares hasta viajes específicos para adultos o jóvenes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            ¿Hay opciones de alimentación para diferentes preferencias dietéticas?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, ofrecemos opciones de alimentación para vegetarianos, veganos y personas con requerimientos dietéticos especiales. Solo avísanos con anticipación.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            ¿Puedo personalizar mi itinerario de tour?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, podemos personalizar itinerarios según tus intereses y preferencias para brindarte una experiencia única y memorable.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            ¿Cuál es el tamaño promedio del grupo en los tours?
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestros grupos suelen ser de tamaño reducido, lo que permite una experiencia más íntima y atención personalizada durante el tour.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            ¿Los tours son aptos para personas con movilidad reducida?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Depende del destino y tipo de tour. Algunos tours pueden acomodar personas con movilidad reducida, pero te recomendamos consultar con nuestro equipo para asegurarte de que el tour sea adecuado para tus necesidades.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 10 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            ¿Qué medidas de seguridad tienen implementadas en los tours?
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            La seguridad de nuestros clientes es nuestra prioridad. Nuestros guías están capacitados para tomar medidas preventivas y ofrecemos información detallada sobre normas de seguridad antes de cada tour.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 11 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            ¿Cómo puedo pagar por mi tour?
+          </button>
+        </h2>
+        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Aceptamos diferentes métodos de pago, como tarjetas de crédito, transferencias bancarias y pagos en efectivo. Puedes consultar las opciones disponibles al realizar la reserva.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 12 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            ¿Puedo agregar actividades adicionales durante el tour?
+          </button>
+        </h2>
+        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, en ciertos destinos ofrecemos actividades opcionales que puedes agregar durante el tour para enriquecer aún más tu experiencia.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 13 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            ¿Cuál es la política de equipaje durante los tours?
+          </button>
+        </h2>
+        <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Te recomendamos llevar equipaje ligero y funcional. En los tours, se proporcionará información sobre las restricciones de equipaje según el destino y el tipo de transporte utilizado.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 14 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+            ¿Proporcionan guías turísticos locales durante los tours?
+          </button>
+        </h2>
+        <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, nuestros tours cuentan con guías turísticos locales altamente calificados y conocedores de cada destino.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 15 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+            ¿Los tours incluyen seguro de viaje?
+          </button>
+        </h2>
+        <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Algunos tours pueden incluir un seguro de viaje básico, mientras que otros pueden requerir que los participantes obtengan su propio seguro. Consulta con nuestro equipo para más detalles.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 16 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+            ¿Ofrecen descuentos para grupos o familias grandes?
+          </button>
+        </h2>
+        <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Sí, tenemos descuentos especiales para grupos y familias grandes. Ponte en contacto con nosotros para obtener más información sobre nuestros descuentos por volumen.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 17 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+            ¿Puedo obtener un reembolso si cambian mis planes después de reservar?
+          </button>
+        </h2>
+        <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestra política de reembolso varía según la antelación y el tipo de cambio. Te recomendamos revisar nuestras políticas de cancelación y reembolso en nuestra página web.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 18 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+            ¿Los tours incluyen actividades de aventura o deportes extremos?
+          </button>
+        </h2>
+        <div id="collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Algunos de nuestros tours incluyen actividades de aventura y deportes extremos. Si estás interesado en estas actividades, infórmanos al momento de reservar.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 19 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+            ¿Cuál es la mejor época del año para realizar un tour a un destino específico?
+          </button>
+        </h2>
+        <div id="collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            La mejor época para visitar un destino depende del clima y las actividades que desees realizar. Nuestros expertos te pueden guiar sobre cuál es la mejor temporada para cada destino.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pregunta 20 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+            ¿Cuál es su experiencia y trayectoria en la industria de viajes?
+          </button>
+        </h2>
+        <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestra agencia cuenta con más de 20 años de experiencia en la industria de viajes y una reputación sólida por brindar experiencias de alta calidad y memorables a nuestros clientes.
+          </div>
+        </div>
+      </div>
+
+    </div>
+</main>
+<footer class="foot">
+  <div class="column"> 
+    <img src="../images/ViaJando.png" id="logo" alt="logo">
+  </div>
+ 
+  <div class="column">
+    <img src="../images/ubicacion.png" alt="ubicacion" class="contact">
+    <h2>Buenos Aires, Argentina.</h2>
+    <img src="../images/whatsapp.png" alt="whatsapp" class="contact">
+    <h2>112233445566</h2>
+    <img src="../images/llama.png" alt="llama" class="contact">
+    <h2>0800- Destinova</h2>
+  </div>
+  <div class="social-media column">
+    <a href="https://es-la.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../images/gorjeo.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+  </div>
+ 
+</footer>
+      <div class="copy"><h4 class="copy">Jimena Paola Barrios ©2023. Todos los derechos reservados.</h4></div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
+</body>
+</html>
